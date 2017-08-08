@@ -1,1 +1,10 @@
 ﻿项目模板
+
+修改项目名称的方法
+1.下载zip，但不能编译（重要）
+2.打开解决方案，把解决方案和项目名称中含有ProjectTemplate改成想要的项目名称，例如AAA。
+3.用VS全局替换功能，把ProjectTemplate替换成AAA
+4.关闭解决方案
+5.用其他文本编辑器（例如vs code），打开文件夹，全局更改ProjectTemplate为AAA。PS：此步骤目的是为了把sln和项目文件里面的ProjectTemplate改掉。
+6.改变文件夹命名。
+7.打开项目，编译，修改项目名称成功。
