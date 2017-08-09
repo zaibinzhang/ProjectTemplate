@@ -17,7 +17,7 @@ namespace ProjectTemplate.ViewModel
         /// <summary>
         ///     初始化一个 业务操作结果信息类 的新实例
         /// </summary>
-        /// <param name="resultType">业务操作结果代码</param>
+        /// <param name="resultCode">业务操作结果代码</param>
         public ServiceResult(ServiceResultCode resultCode)
         {
             ReturnCode = resultCode;
@@ -53,7 +53,7 @@ namespace ProjectTemplate.ViewModel
         /// <summary>
         ///     初始化一个 业务操作结果信息类 的新实例
         /// </summary>
-        /// <param name="resultType">业务操作结果代码</param>
+        /// <param name="resultCode">业务操作结果代码</param>
         public ServiceResult(ServiceResultCode resultCode)
             : base(resultCode)
         {
