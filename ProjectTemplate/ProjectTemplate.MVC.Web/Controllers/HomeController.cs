@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Web;
 using System.Web.Mvc;
+using ProjectTemplate.Common;
 using ProjectTemplate.IBusiness;
 
 namespace ProjectTemplate.MVC.Web.Controllers
@@ -15,6 +16,7 @@ namespace ProjectTemplate.MVC.Web.Controllers
         public ActionResult Index()
         {
             _testServer.Test();
+            LogHelper.Error("这是error");
             return View();
         }
 

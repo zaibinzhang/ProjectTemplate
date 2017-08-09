@@ -13,6 +13,7 @@ namespace ProjectTemplate.Business
         public void Test()
         {
             DbContextFactory.Instance.Tests.Add(new Test() {Name = "测试"});
+            DbContextFactory.Instance.SaveChanges();
         }
     }
 }
