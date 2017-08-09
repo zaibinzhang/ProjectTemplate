@@ -1,7 +1,7 @@
 ﻿using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
 
-namespace ProjectTemplate.MVC.Web
+namespace ProjectTemplate.Common
 {
     public static class InstanceFactory
     {

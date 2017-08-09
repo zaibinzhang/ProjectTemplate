@@ -69,6 +69,7 @@
     <Compile Include="ExHelper.cs" />
     <Compile Include="HtmlHelper.cs" />
     <Compile Include="HttpHelper.cs" />
+    <Compile Include="InstanceFactory.cs" />
     <Compile Include="JsonHelper.cs" />
     <Compile Include="LogHelper.cs" />
     <Compile Include="MD5Helper.cs" />
