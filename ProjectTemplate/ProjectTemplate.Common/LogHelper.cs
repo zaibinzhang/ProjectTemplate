@@ -16,7 +16,15 @@ namespace ProjectTemplate.Common
         static LogHelper()
         {
             string dir = HostingEnvironment.MapPath("~/");
-            string path = Path.Combine(dir, _configFile);
+            string path;
+            if (dir != null)
+            {
+                path = Path.Combine(dir, _configFile);
+            }
+            else
+            {
+                path = _configFile;
+            }
             XmlConfigurator.Configure(new FileInfo(path));
             _log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         }
