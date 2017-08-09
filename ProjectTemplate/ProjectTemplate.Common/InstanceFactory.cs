@@ -1,4 +1,5 @@
-﻿using Microsoft.Practices.Unity;
+﻿using System;
+using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
 
 namespace ProjectTemplate.Common
@@ -9,8 +10,16 @@ namespace ProjectTemplate.Common
 
         static InstanceFactory()
         {
-            _container = new UnityContainer();
-            _container.LoadConfiguration("ProjectTemplateContainer");
+            try
+            {
+                _container = new UnityContainer();
+                _container.LoadConfiguration("ProjectTemplateContainer");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
         public static T GetInstance<T>()
